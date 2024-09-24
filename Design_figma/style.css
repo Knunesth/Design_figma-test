@@ -1,0 +1,166 @@
+/* Reset Básico */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body, html {
+    width: 100%;
+}
+
+body {
+    background-color: #292929; /* Cor de fundo do corpo */
+}
+
+/* Posicionamento do Ícone da Loja */
+.loja {
+    display: flex;
+    position: absolute; /* Posição absoluta do ícone da loja */
+    left: 5px; /* Posição à esquerda */
+}
+
+/* Barra de Ícones no Topo */
+.icones {
+    display: flex;
+    justify-content: space-evenly; /* Espaçamento uniforme entre os itens */
+    align-items: center; /* Centralização vertical dos ícones */
+    background-color: #555; /* Cor de fundo da barra */
+    padding: 10px 0; /* Espaçamento vertical */
+    border-bottom: 5px solid #1C1C1C; /* Borda inferior escura */
+    width: 100%; /* Ocupa toda a largura da tela */
+}
+
+/* Estilo dos Ícones Individuais */
+.icones li {
+    text-align: center; /* Centralização do conteúdo (imagem e texto) */
+    color: white; /* Cor do texto */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #717171; /* Cor de fundo dos ícones */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Sombra para profundidade */
+}
+
+/* Estilo das Imagens nos Ícones */
+.icones img {
+    height: 40px; /* Altura das imagens dos ícones */
+    width: auto; /* Largura ajustada automaticamente */
+}
+
+.icones span {
+    display: block;
+    margin-top: 5px; /* Espaçamento entre a imagem e o texto */
+    font-size: 12px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+}
+
+/* Layout Geral do Cabeçalho */
+.cabecarios {
+    display: flex; /* Distribui os itens horizontalmente */
+    border: 5px solid #1C1C1C; /* Borda escura */
+    background: #555; /* Cor de fundo */
+}
+
+.cabecario_lateral {
+    border: 5px solid #1C1C1C; /* Borda escura */
+    background: #555; /* Cor de fundo */
+    width: 84px; /* Largura fixa da coluna lateral */
+    height: 100%; /* Altura total */
+    padding-top: 41%; /* Espaçamento superior */
+}
+
+.cabecario_inflat {
+    display: flex; /* Distribuição flexível dos itens */
+    height: 100%; /* Altura total */
+}
+
+/* Área Inferior do Cabeçalho */
+.inferior {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: flex-start; /* Alinha os itens no topo */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+/* Estilo da Área de Pesquisa */
+.cabecario_inferior {
+    background-color: #A4A4A4; /* Cor de fundo da área inferior */
+    width: 100%; /* Ocupa toda a largura */
+    height: 60px; /* Altura fixa */
+    margin: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center; /* Centralização dos itens */
+}
+
+.cabecario_inferior img {
+    height: 40px; /* Altura das imagens */
+    width: auto; /* Largura ajustada automaticamente */
+}
+
+/* Estilo da Barra de Pesquisa */
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens da pesquisa */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 25px; /* Bordas arredondadas */
+    width: 60%; /* Largura da barra de pesquisa */
+    padding: 10px;
+    margin: 0 auto; /* Centraliza a barra de pesquisa horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo do Campo de Texto de Pesquisa */
+.pesquisa_texto {
+    border: none; /* Remove bordas padrão */
+    outline: none; /* Remove o outline ao focar */
+    width: 100%; /* Ocupa todo o espaço disponível */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px;
+    border-radius: 25px; /* Bordas arredondadas */
+    background-color: transparent; /* Fundo transparente */
+}
+
+/* Estilo Geral dos Produtos */
+.produtos {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os produtos */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    margin: 80px; /* Espaçamento geral */
+}
+
+/* Estilo de Cada Item de Produto */
+.produto-item {
+    text-align: center; /* Centraliza o conteúdo de cada item */
+}
+
+/* Estilo das Imagens dos Produtos */
+.produto-item img {
+    width: 200px; /* Largura fixa das imagens */
+    height: auto; /* Altura ajustada automaticamente */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do Texto Descritivo dos Produtos */
+.produto-item p {
+    margin: 10px 0; /* Espaçamento entre a imagem e o texto */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo do Botão "Comprar" */
+.produto-item button {
+    background-color: #1C1C1C; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Ícone de cursor ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito Hover no Botão */
+.produto-item button:hover {
+    background-color: #555; /* Muda a cor do fundo ao passar o mouse */
+}
